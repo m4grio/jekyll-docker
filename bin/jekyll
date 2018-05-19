@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+docker run \
+    -it \
+    --rm \
+    --volume `pwd`:/opt/app \
+    -p 4000:4000 \
+    astillero_jekyll:latest \
+    $@
