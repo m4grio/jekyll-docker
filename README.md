@@ -1,4 +1,4 @@
-<h1 align="center"><sup>Jekyll on Docker</sup><br></h1>
+<h1 align="center">Jekyll on Docker</h1>
 <br>
 
 ## Requirements
