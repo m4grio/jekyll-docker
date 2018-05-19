@@ -18,4 +18,7 @@ RUN \
     gem install \
         jekyll
 
+WORKDIR /opt/app
+EXPOSE 4000
+
 ENTRYPOINT ["jekyll"]
