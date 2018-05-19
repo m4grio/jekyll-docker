@@ -17,3 +17,5 @@ RUN \
     set -xe ;\
     gem install \
         jekyll
+
+ENTRYPOINT ["jekyll"]
