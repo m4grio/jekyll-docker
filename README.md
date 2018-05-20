@@ -4,6 +4,8 @@
 </div>
 <br>
 
+This tool provides a **container-as-a-binary** that will pass every option it is run with to the underlying ephemeral container where Jekyll is really installed.
+
 ## Requirements
 
 * Docker
