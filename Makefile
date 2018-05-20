@@ -20,6 +20,11 @@ $(prefix)/bin/$(JEKYLL_BIN): build $(prefix)/bin
 $(prefix)/bin:
 	install -d -m 0755 $(prefix)/bin
 
+.PHONY: all
+all:
+	@echo "usage:  make install"
+	@echo "        make uninstall"
+
 .PHONY: build
 build:
 	docker-compose build
