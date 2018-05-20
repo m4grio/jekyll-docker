@@ -1,4 +1,7 @@
 <h1 align="center">Jekyll on Docker</h1>
+<div align="center">
+    <i>All the goodness from Jekyll, zero gems hassle</i>
+</div>
 <br>
 
 ## Requirements
@@ -23,6 +26,30 @@ usage: make install
 $ jekyll --version
 jekyll 3.8.1
 $
+```
+
+### Custom gems
+
+If there's a `Gemfile` in the folder this binary is ran into, `bundle install` will be executed before anything else – effectively preparing the _ephemeral_ container with a very specific set of gems.
+
+```bash
+$ cd ~/my_project
+$ echo "gem 'pygments.rb', '~> 0.6.3'" >> Gemfile
+$ jekyll serve -w
+Fetching gem metadata from https://rubygems.org/..............
+Fetching pygments.rb 0.6.3
+Installing pygments.rb 0.6.3
+Bundle complete!
+Bundled gems are installed into `/usr/local/bundle`
+Configuration file: /opt/app/_config.yml
+            Source: /opt/app
+       Destination: /opt/app/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 2.762 seconds.
+ Auto-regeneration: enabled for '/opt/app'
+    Server address: http://0.0.0.0:4000
+  Server running... press ctrl-c to stop.
 ```
 
 ## Author
